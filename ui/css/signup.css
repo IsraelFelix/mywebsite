@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: #0b151f;
+}
+
+a:link, a:hover, a:visited,a:focus {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    padding-top: 15px;
+    margin-left: 5px;
+    border-radius: 50%;
+}
+
+.header {
+    position: relative;
+    border-bottom: 2px solid #979a92;
+    margin-bottom: 20px;
+    background-color: #9a7a7a;
+    padding-bottom: 20px;
+}
+
+.header i {
+    position: absolute;
+    font-size: 25px;
+    top: 20px;
+    right: 20px;
+    color: #5a4a0a; 
+}
+
+.content {
+    margin-bottom: 40px;
+}
+
+.content h3, p {
+    margin:0 10px;
+    font-size: 1rem;
+    color: rgb(218, 224, 208);
+    cursor: pointer;
+    line-height: 1.3rem;
+}
+
+.signup_wrapper {
+    margin-top: 80px;
+    max-width: 360px;
+    width: 60%;
+    border-radius: 20px;
+    background: transparent;
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    color: #9a7a7a;
+    padding: 20px;
+}
+
+.signup_wrapper h3 {
+    text-align: center;
+    font-size: 18px;
+    border-bottom: 2px solid #709209;
+    padding: 5px 0;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    font-weight: 100;
+    width: 180px;
+}
+
+input[type=text], input[type=password] {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12px 5px;
+    background: transparent;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid #272604;
+    color: #898e6c;
+    margin: 5px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+input[type=submit] {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px 0;
+    margin-top: 30px;
+    outline: none;
+    border: none;
+    background: #9a7a7a;
+    opacity: 0.7;
+    border-radius: 20px;
+    font-size: 20px;
+}
+
+input[type=submit]:hover {
+    background: #667c05;
+    opacity: 0.7;
+    transition: all 1sec;
+    cursor: pointer;
+}
+
+@media only screen and (min-width: 768px) {
+    .logo {
+        width: 80px;
+        height: 80px;
+        margin-left: 10px;
+
+    }
+    
+    .header i {
+        font-size: 50px;
+    }
+
+    .content h3, p {
+        margin:20px 10px;
+        font-size: 1.8rem;
+        line-height: 1.5rem;
+    }
+
+    .signup_wrapper h3 {
+        font-size:40px;
+        margin-bottom: 70px;
+        margin-top: 80px;
+        width: 250px;
+    }
+    
+    input[type=text], input[type=password] {
+        font-size: 28px;
+    }
+
+    input[type=submit] {
+        padding: 15px 0;
+        margin-top: 50px;
+        opacity: 0.8;
+        font-size: 30px;
+    }
+    
+
+}
+
+@media only screen and (min-width: 1000px) {
+    .signup_wrapper {
+        max-width: 360px;
+        width: 60%;
+        border-radius: 20px;
+        background: transparent;
+        position: absolute;
+        top: 100%;
+        left:50%;
+        transform: translate(-50%, -50%);
+        color: #9a7a7a;
+        padding: 20px;
+    }
+
+    
+}
+
